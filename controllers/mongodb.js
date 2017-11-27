@@ -23,12 +23,12 @@ module.exports = function(app){
 //default Options
 app.use(fileUpload());
 
-app.get('/contact', function(req,res){
-        res.render('contact');
+app.get('/', function(req,res){
+        res.render('upload');
 });
 
 
-app.post('/contact', (req, res)=>{
+app.post('/upload', (req, res)=>{
 
     if(req.files){ //condition for value Getting or Not
 
